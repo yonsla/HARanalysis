@@ -1,0 +1,49 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals TAccXYZ and TGyroXYZ. These time domain signals (prefix 'T' to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (TBodyAccXYZ and TGravityAccXYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (TBodyAccJerkXYZ and TBodyGyroJerkXYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (TBodyAccMag, TGravityAccMag, TBodyAccJerkMag, TBodyGyroMag, TBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing FBodyAccXYZ, FBodyAccJerkXYZ, FBodyGyroXYZ, FBodyAccJerkMag, FBodyGyroMag, FBodyGyroJerkMag. (Note the 'F' to indicate frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
+
+TBodyAccXYZ
+TGravityAccXYZ
+TBodyAccJerkXYZ
+TBodyGyroXYZ
+TBodyGyroJerkXYZ
+TBodyAccMag
+TGravityAccMag
+TBodyAccJerkMag
+TBodyGyroMag
+TBodyGyroJerkMag
+FBodyAccXYZ
+FBodyAccJerkXYZ
+FBodyGyroXYZ
+FBodyAccMag
+FBodyAccJerkMag
+FBodyGyroMag
+FBodyGyroJerkMag
+
+The set of variables that were estimated from these signals are: 
+
+Mean: Mean value
+Std: Standard deviation
+
+Rows in the data set
+====================
+
+Each row corresponds to the average of the given variable over all measurements for a given activity or subject.
+The first six rows are averages for the activities, in the following order:
+
+Walking
+Walking upstairs
+Walking downstairs
+Sitting
+Standing
+Laying
+
+The next thirty rows are averages for the subjects, in the numerical order assigned to the subjects.
